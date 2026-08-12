@@ -1,0 +1,2 @@
+finding_id,route_id,viewport,observed_at_utc,observation,evidence_note,priority,owner_question_or_recommendation,status
+finding-01,route-01,desktop,,,,,Question: what should happen next?,open

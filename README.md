@@ -1,0 +1,36 @@
+# Public-Path Evidence Audit Starter
+
+A small, public-only worksheet for founders, agencies, and operators who want
+to review a conversion path before sharing credentials or changing production
+systems.
+
+It is a planning and observation aid, not a security test, accessibility
+certification, legal review, or conversion guarantee.
+
+## Included
+
+- `route-register.csv` — record up to five public routes and one visitor action.
+- `finding-log.csv` — separate observations from hypotheses and decisions.
+- `review-checklist.md` — a practical, public-only review sequence.
+
+## Use safely
+
+1. Start with pages available to any ordinary visitor.
+2. State the visitor action you are reviewing before collecting observations.
+3. Do not log in, create an account, enter form data, submit a form, make a
+   purchase, bypass controls, or access non-public systems.
+4. Record a fact with a route, viewport, time, and a concise reproduction note.
+5. Mark anything uncertain as a question for the owner instead of treating it
+   as a defect.
+
+## Want a bounded review?
+
+Allure Labs offers a fixed-scope public conversion-path review for up to five
+routes, desktop and mobile observation, and a short evidence report. It is
+separate from this free starter and does not require credentials.
+
+<https://allure-launch-path-audit.alluragensin.chatgpt.site>
+
+## License
+
+MIT. See [LICENSE](LICENSE).
