@@ -27,9 +27,10 @@ certification, legal review, or conversion guarantee.
 
 Allure Labs offers a fixed-scope public conversion-path review for up to five
 routes, desktop and mobile observation, and a short evidence report. It is
-separate from this free starter and does not require credentials.
+separate from this free starter and does not require credentials. A one-minute
+brief prepares a complete scope-request email without storing your input.
 
-<https://allure-launch-path-audit.alluragensin.chatgpt.site>
+<https://allure-launch-path-audit.alluragensin.chatgpt.site/#brief>
 
 ## License
 
