@@ -32,6 +32,10 @@ brief prepares a complete scope-request email without storing your input.
 
 <https://allure-launch-path-audit.alluragensin.chatgpt.site/#brief>
 
+For a launch path that also needs one explicitly authorized staging-workflow
+repair, synthetic acceptance testing, and an operator handoff, see the separate
+fixed-scope [Launch-Path Assurance Sprint](https://allure-launch-path-audit.alluragensin.chatgpt.site/launch-assurance-sprint).
+
 ## License
 
 MIT. See [LICENSE](LICENSE).
