@@ -12,6 +12,8 @@ certification, legal review, or conversion guarantee.
 - `route-register.csv` — record up to five public routes and one visitor action.
 - `finding-log.csv` — separate observations from hypotheses and decisions.
 - `review-checklist.md` — a practical, public-only review sequence.
+- `sample-self-audit.md` — three real, carefully bounded findings from an
+  Allure Labs-owned public homepage.
 
 ## Use safely
 
@@ -24,6 +26,9 @@ certification, legal review, or conversion guarantee.
    as a defect.
 
 ## Want a bounded review?
+
+First, [read the sample self-audit](sample-self-audit.md) to see how an
+observation, rationale, and recommendation are kept separate.
 
 Allure Labs offers a fixed-scope public conversion-path review for up to five
 routes, desktop and mobile observation, and a short evidence report. It is
