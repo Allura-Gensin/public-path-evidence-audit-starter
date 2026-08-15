@@ -7,6 +7,24 @@ systems.
 It is a planning and observation aid, not a security test, accessibility
 certification, legal review, or conversion guarantee.
 
+## Run a 10-minute public-path check
+
+Use this as a **landing-page QA checklist**, **pre-launch website checklist**,
+or lightweight **conversion-funnel audit** when you need to verify that a
+visitor can understand and reach one intended action.
+
+1. Download or copy `route-register.csv` and name one visitor action.
+2. Review up to five public routes with `review-checklist.md`.
+3. Record only reproducible observations in `finding-log.csv`.
+4. Compare your notes with the [completed sample](sample-self-audit.md).
+
+If you want Allure Labs to perform the same bounded, public-only review,
+[open a structured audit request](https://github.com/Allura-Gensin/public-path-evidence-audit-starter/issues/new?template=audit-request.yml).
+Every request is counted in this repository's public Issues tab, providing a
+clear measure of qualified inbound interest. Opening one starts a scope
+conversation only; it does not authorize testing, create a contract, or require
+payment.
+
 ## Included
 
 - `route-register.csv` — record up to five public routes and one visitor action.
