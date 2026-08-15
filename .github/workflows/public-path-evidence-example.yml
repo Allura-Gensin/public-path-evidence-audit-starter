@@ -18,9 +18,8 @@ jobs:
     steps:
       - name: Capture bounded public-path evidence
         id: evidence
-        # RELEASE GATE: replace the all-zero placeholder with the exact reviewed
-        # 40-character release commit SHA before this workflow is published.
-        uses: Allura-Gensin/public-path-evidence-audit-starter@0000000000000000000000000000000000000000
+        # Pinned to the exact independently reviewed implementation commit.
+        uses: Allura-Gensin/public-path-evidence-audit-starter@af85ce58fa071c56e4d16d19b77c19a2a69dbd9e
         with:
           urls-json: ${{ inputs.urls-json }}
 

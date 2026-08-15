@@ -4,6 +4,7 @@ import importlib.util
 import io
 import json
 import os
+import re
 import socket
 import stat
 import sys
@@ -510,7 +511,12 @@ class OutputAndCLITests(unittest.TestCase):
         self.assertIn("permissions: {}", workflow)
         self.assertNotIn("pull_request_target", workflow)
         self.assertIn("PPA_RUNNER_OS: ${{ runner.os }}", action)
-        self.assertIn("@0000000000000000000000000000000000000000", workflow)
+        references = re.findall(
+            r"Allura-Gensin/public-path-evidence-audit-starter@([0-9a-f]{40})",
+            workflow,
+        )
+        self.assertEqual(len(references), 1)
+        self.assertNotEqual(references[0], "0" * 40)
         self.assertNotIn("@v1", workflow)
 
     @patch.object(capture_module, "create_report", side_effect=OSError("::error::secret-path"))

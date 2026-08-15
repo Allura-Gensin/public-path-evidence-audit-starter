@@ -37,9 +37,8 @@ private or special-purpose network address.
 permissions: {}
 
 steps:
-  # Replace the all-zero release placeholder only with the exact reviewed
-  # 40-character commit SHA. Never use a mutable branch or tag.
-  - uses: Allura-Gensin/public-path-evidence-audit-starter@0000000000000000000000000000000000000000
+  # Pinned to the exact independently reviewed implementation commit.
+  - uses: Allura-Gensin/public-path-evidence-audit-starter@af85ce58fa071c56e4d16d19b77c19a2a69dbd9e
     id: evidence
     with:
       urls-json: '["https://example.com/", "https://example.com/pricing"]'
