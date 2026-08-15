@@ -25,6 +25,55 @@ clear measure of qualified inbound interest. Opening one starts a scope
 conversation only; it does not authorize testing, create a contract, or require
 payment.
 
+## Capture evidence in GitHub Actions
+
+This repository also contains a dependency-free composite action that records
+a small private Markdown report for one to five explicitly named public
+routes. It performs GET requests only. It does not follow redirects, retain or
+send cookies, execute scripts, submit forms, authenticate, or connect to a
+private or special-purpose network address.
+
+```yaml
+permissions: {}
+
+steps:
+  # Replace the all-zero release placeholder only with the exact reviewed
+  # 40-character commit SHA. Never use a mutable branch or tag.
+  - uses: Allura-Gensin/public-path-evidence-audit-starter@0000000000000000000000000000000000000000
+    id: evidence
+    with:
+      urls-json: '["https://example.com/", "https://example.com/pricing"]'
+```
+
+The action exposes `report-path`, `route-count`, and `html-count` outputs. It
+does not upload, print, cache, commit, or publish the report. A caller can make
+an explicit downstream decision about the private `report-path`; never publish
+a report containing information that should not be public. See
+[the manual example workflow](.github/workflows/public-path-evidence-example.yml)
+for a complete job.
+
+Input URLs must use standard-port HTTPS, contain no username or password, and
+be publicly reachable without credentials. URL fragments, private or
+special-purpose DNS answers, mixed public/private DNS answers, IP literals,
+query strings, and self-hosted runners are refused. Never provide tokens,
+customer data, signed links, private URLs, or other secrets. The action needs no
+GitHub token or repository permission.
+
+Version 1 runs only on GitHub-hosted Linux runners. Each route has one 15-second
+deadline covering DNS, connection, TLS, response headers, and body, and the
+whole run is capped at 60 seconds. Python's standard HTTP parser enforces its
+own per-line and header-count limits; a response wrapper also counts the status
+line and headers while that parser reads them and aborts above a 64 KiB
+aggregate, with the socket still deadline-bound. Reports
+are created once at `$RUNNER_TEMP/public-path-evidence-audit/report.md` with a
+private directory and file mode, and a pre-existing path is refused.
+
+For local verification, run:
+
+```bash
+python3 -m unittest discover -s tests -v
+```
+
 ## Included
 
 - `route-register.csv` — record up to five public routes and one visitor action.

@@ -1,0 +1,32 @@
+name: Public-path evidence example
+
+on:
+  workflow_dispatch:
+    inputs:
+      urls-json:
+        description: JSON array of one to five credential-free public HTTPS URLs
+        required: true
+        default: '["https://example.com/"]'
+        type: string
+
+permissions: {}
+
+jobs:
+  capture:
+    runs-on: ubuntu-latest
+    timeout-minutes: 2
+    steps:
+      - name: Capture bounded public-path evidence
+        id: evidence
+        # RELEASE GATE: replace the all-zero placeholder with the exact reviewed
+        # 40-character release commit SHA before this workflow is published.
+        uses: Allura-Gensin/public-path-evidence-audit-starter@0000000000000000000000000000000000000000
+        with:
+          urls-json: ${{ inputs.urls-json }}
+
+      - name: Report fixed aggregate status
+        shell: bash
+        env:
+          ROUTE_COUNT: ${{ steps.evidence.outputs.route-count }}
+          HTML_COUNT: ${{ steps.evidence.outputs.html-count }}
+        run: printf 'Captured %s route(s); %s bounded HTML summary(s).\n' "$ROUTE_COUNT" "$HTML_COUNT"

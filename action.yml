@@ -1,0 +1,37 @@
+name: Public-Path Evidence Check
+description: Create a bounded Markdown report for one to five public HTTPS routes.
+author: Allure Labs
+
+branding:
+  icon: check-circle
+  color: blue
+
+inputs:
+  urls-json:
+    description: JSON array containing one to five credential-free public HTTPS URLs.
+    required: true
+
+outputs:
+  report-path:
+    description: Absolute path of the private Markdown report on the runner.
+    value: ${{ steps.capture.outputs.report-path }}
+  route-count:
+    description: Number of explicitly supplied routes inspected.
+    value: ${{ steps.capture.outputs.route-count }}
+  html-count:
+    description: Number of routes returning bounded HTML that was summarized.
+    value: ${{ steps.capture.outputs.html-count }}
+
+runs:
+  using: composite
+  steps:
+    - name: Capture public-path evidence
+      id: capture
+      shell: bash
+      env:
+        PPA_URLS_JSON: ${{ inputs.urls-json }}
+        PPA_RUNNER_ENVIRONMENT: ${{ runner.environment }}
+        PPA_RUNNER_OS: ${{ runner.os }}
+        PPA_RUNNER_TEMP: ${{ runner.temp }}
+        PYTHONDONTWRITEBYTECODE: "1"
+      run: python3 "$GITHUB_ACTION_PATH/src/public_path_evidence_capture.py"

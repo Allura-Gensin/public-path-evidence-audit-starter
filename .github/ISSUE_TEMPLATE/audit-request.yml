@@ -40,6 +40,19 @@ body:
         - Not sure yet
     validations:
       required: true
+  - type: dropdown
+    id: source
+    attributes:
+      label: How did you find this audit?
+      options:
+        - Public-Path Evidence GitHub Action
+        - GitHub checklist or sample
+        - Allure Labs website
+        - GitHub or web search
+        - Referral
+        - Other
+    validations:
+      required: true
   - type: checkboxes
     id: boundary
     attributes:
