@@ -101,11 +101,7 @@ routes, desktop and mobile observation, and a short evidence report. It is
 separate from this free starter and does not require credentials. A one-minute
 brief prepares a complete scope-request email without storing your input.
 
-<https://allure-launch-path-audit.alluragensin.chatgpt.site/#brief>
-
-For a launch path that also needs one explicitly authorized staging-workflow
-repair, synthetic acceptance testing, and an operator handoff, see the separate
-fixed-scope [Launch-Path Assurance Sprint](https://allure-launch-path-audit.alluragensin.chatgpt.site/launch-assurance-sprint).
+<https://offers.allurelabs.ai/audit/>
 
 GitHub users can also [open a public, structured audit request](https://github.com/Allura-Gensin/public-path-evidence-audit-starter/issues/new?template=audit-request.yml).
 The request is only a scope conversation: it creates no contract, payment, or
