@@ -1,0 +1,49 @@
+name: Request a bounded audit
+description: Start a public scope conversation for a Launch-Path Evidence Audit.
+title: "[Audit request] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This issue is public. Share only public URLs and non-sensitive context. Do not include credentials, customer data, analytics exports, private links, or payment information.
+
+        Opening this issue requests a scope conversation; it does not create a contract, authorize testing, or require payment.
+  - type: input
+    id: public_url
+    attributes:
+      label: Public starting URL
+      description: The ordinary public page where the visitor path begins.
+      placeholder: https://example.com/
+    validations:
+      required: true
+  - type: input
+    id: target_action
+    attributes:
+      label: Target visitor action
+      description: The one action the visitor should understand or complete.
+      placeholder: Request a demo, start checkout, choose a plan, or join a waitlist
+    validations:
+      required: true
+  - type: textarea
+    id: routes
+    attributes:
+      label: Additional public routes
+      description: List up to four more public URLs, one per line. Leave blank if the starting URL is enough.
+  - type: dropdown
+    id: stage
+    attributes:
+      label: Current stage
+      options:
+        - Preparing to launch
+        - Recently launched
+        - Existing path under review
+        - Not sure yet
+    validations:
+      required: true
+  - type: checkboxes
+    id: boundary
+    attributes:
+      label: Public-only boundary
+      options:
+        - label: I understand that the base audit uses only ordinary public pages and does not include logins, submissions, purchases, security testing, or private data.
+          required: true
