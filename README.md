@@ -13,7 +13,8 @@ Use this as a **landing-page QA checklist**, **pre-launch website checklist**,
 or lightweight **conversion-funnel audit** when you need to verify that a
 visitor can understand and reach one intended action.
 
-1. Download or copy `route-register.csv` and name one visitor action.
+1. [Download the free v1.0.0 worksheet ZIP](https://github.com/Allura-Gensin/public-path-evidence-audit-starter/releases/download/worksheet-v1.0.0/public-path-evidence-audit-starter-worksheet-v1.0.0.zip),
+   or copy `route-register.csv`, and name one visitor action.
 2. Review up to five public routes with `review-checklist.md`.
 3. Record only reproducible observations in `finding-log.csv`.
 4. Compare your notes with the [completed sample](sample-self-audit.md).
