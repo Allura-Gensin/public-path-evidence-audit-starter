@@ -22,8 +22,9 @@ visitor can understand and reach one intended action.
 Prefer a browser-sized version? Use the
 [free public-path launch checklist](https://offers.allurelabs.ai/public-path-checklist/).
 
-If you want Allure Labs to perform the same bounded, public-only review,
-[open a structured audit request](https://github.com/Allura-Gensin/public-path-evidence-audit-starter/issues/new?template=audit-request.yml&title=%5Bpublic-path-checklist%5D%20Audit%20request).
+If you want Allure Labs to perform the same bounded, public-only review, the
+fixed scope is $350 for one agreed public path. [Open a structured audit
+request](https://github.com/Allura-Gensin/public-path-evidence-audit-starter/issues/new?template=audit-request.yml&title=%5Bpublic-path-checklist%5D%20Audit%20request).
 Every request is counted in this repository's public Issues tab, providing a
 clear measure of qualified inbound interest. Opening one starts a scope
 conversation only; it does not authorize testing, create a contract, or require
