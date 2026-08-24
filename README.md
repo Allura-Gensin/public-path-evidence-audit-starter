@@ -31,6 +31,21 @@ clear measure of qualified inbound interest. Opening one starts a scope
 conversation only; it does not authorize testing, create a contract, or require
 payment.
 
+## Choose the right next step
+
+- **Use the free worksheet** if you can name one visitor action and want to
+  record your own observations across up to five public routes.
+- **Request the $350 audit** if you want an independent, public-only desktop and
+  mobile review with a concise evidence report and prioritized next steps.
+- **Pause and ask your owner or counsel** if the path requires authentication,
+  customer data, regulated claims, private systems, or testing beyond ordinary
+  public navigation.
+
+If the paid review fits, [open the structured audit
+request](https://github.com/Allura-Gensin/public-path-evidence-audit-starter/issues/new?template=audit-request.yml&title=%5Bpublic-path-checklist%5D%20Audit%20request).
+The form asks only for public-path scope details and should never contain
+credentials, customer data, private links, or payment information.
+
 ## Capture evidence in GitHub Actions
 
 This repository also contains a dependency-free composite action that records
