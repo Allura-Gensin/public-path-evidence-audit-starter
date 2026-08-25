@@ -46,6 +46,10 @@ request](https://github.com/Allura-Gensin/public-path-evidence-audit-starter/iss
 The form asks only for public-path scope details and should never contain
 credentials, customer data, private links, or payment information.
 
+Before requesting it, you can review the [deliverable
+preview](DELIVERABLE-PREVIEW.md) to see the decision-summary table, finding
+fields, acceptance boundary, and direct tracked request path.
+
 ## Capture evidence in GitHub Actions
 
 This repository also contains a dependency-free composite action that records
@@ -101,6 +105,8 @@ python3 -m unittest discover -s tests -v
 - `review-checklist.md` — a practical, public-only review sequence.
 - `sample-self-audit.md` — three real, carefully bounded findings from an
   Allure Labs-owned public homepage.
+- `DELIVERABLE-PREVIEW.md` — the paid audit's report structure, acceptance
+  boundary, and tracked scope-request path.
 
 ## Use safely
 

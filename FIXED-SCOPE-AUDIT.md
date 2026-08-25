@@ -29,6 +29,10 @@ Every finding is marked as a reproducible observation or a clearly framed
 question. A clean route is reported as a pass; the report is not padded with
 speculative defects.
 
+[Review the deliverable preview](DELIVERABLE-PREVIEW.md) for the summary table,
+finding fields, walkthrough boundary, and an example based only on an Allure
+Labs-owned public page.
+
 ## Price and next step
 
 The fixed fee is **$350**. Before work or payment, the buyer and Allure Labs
