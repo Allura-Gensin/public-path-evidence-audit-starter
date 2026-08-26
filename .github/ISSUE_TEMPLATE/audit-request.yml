@@ -1,6 +1,8 @@
 name: Request a bounded audit
 description: Start a public scope conversation for a Launch-Path Evidence Audit.
 title: "[Audit request] "
+labels:
+  - audit-request
 body:
   - type: markdown
     attributes:
