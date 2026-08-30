@@ -22,6 +22,19 @@ visitor can understand and reach one intended action.
 Prefer a browser-sized version? Use the
 [free public-path launch checklist](https://offers.allurelabs.ai/public-path-checklist/).
 
+That page also progressively exposes two read-only WebMCP tools in supporting
+browsers: one returns the eight public-path checks and one prepares a synthetic
+route register for one to five public HTTPS routes. The tools do not visit the
+routes, submit forms, store input, or claim that a review occurred. Browsers
+without WebMCP support continue to receive the same ordinary checklist page.
+
+The dependency-free implementation is in [`webmcp-checklist.js`](webmcp-checklist.js).
+Its focused tests run with:
+
+```bash
+node --test tests/test_webmcp_checklist.mjs
+```
+
 If you want Allure Labs to perform the same bounded, public-only review, the
 fixed scope is $350 for one agreed public path. [Read the one-page
 scope](FIXED-SCOPE-AUDIT.md), then [open a structured audit
